@@ -10,8 +10,7 @@ function adddatabase ($databaseName) {
  // create curl resource 
 	//$databaseName=$_POST['DBname'];
 
-        //User name key match
-        //$username_key="yojohnyo1@gmail.com:egf4TLGJt5d/djAaOwp2S2hMf7uL+jrJwl9kHtkEoHNNwDEUecCB3UFASy6SFUgjnMJ86sOxkBV1";
+       
         $postfields=array('db'=>$databaseName);
 	$url_for_site="https://cloudapi.acquia.com/v1/sites/devcloud:yojohnyo/dbs.json";
 	$json_data = json_encode($postfields);

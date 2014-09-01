@@ -35,9 +35,9 @@ function databaseWrite ($writeData, $databaseTable) {
 	mysql_close($connection);
 }
 
-$testData = array("column1"=>"site2","column2"=>"name2","column3"=>"url2");
+/*$testData = array("siteURL"=>"site2","databaseName"=>"name2","ownerId"=>l2);
 $table="siteInfo";
 print "Database write<br>";
 databaseWrite ($testData, $table);
-
+*/
 	?>

@@ -6,7 +6,12 @@
  * and open the template in the editor.
  */
 var_dump($_POST);
-print "<br>".$_POST["submitValue"]."<br>";
+include 'databaseread.php';
 if ($_POST["submitValue"] == "addDB") {
     print "Add DB";
+} elseif ($_POST["submitValue"]== "addSite") {
+    print "Add Site";
+    $dbData=$_POST;
+    include'databasewrite.php';
+    databaseWrite($dbData,"siteInfo");
 }

@@ -10,11 +10,16 @@ and open the template in the editor.
         <title>Drupal interface</title>
     </head>
     <body>
+        <?php
+            include ('mainNavigation.php');
+        ?>
         <h1>Drupal interface</h1>
         <p>What would you like to do?</p>
         <a href="getdbinfo.php">Add a database</a>
 		<br>
 		<a href="siteRequest.php">Add a site</a>
+                <br>
+                <a href="generateReport.php">Generate a report</a>
         <?php
         // put your code here
         ?>
